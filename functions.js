@@ -30,6 +30,15 @@ printPayRange("Google", 110000, 150000);
 
 
 // 4: Write a function that satifies the following interaction pattern:
+function checkStock(amount, item){
+  if (amount === 0)
+    console.log(`${item} is OUT of stock!`);
+  else if (amount <= 3)
+    console.log(`${item} - running LOW`);
+  else
+    console.log(`${item} is stocked`);
+
+}
 
 checkStock(4, "Coffee");
 // => "Coffee is stocked"
